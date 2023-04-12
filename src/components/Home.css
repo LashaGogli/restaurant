@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@800&family=Space+Mono:wght@700&display=swap');
+
+.popularDiv{
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.priceSpan{
+    margin-left: 140px;
+    font-family: "Chivo Mono";
+}
+h1 {
+    font-size: 52px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Chivo Mono";
+    
+  }
