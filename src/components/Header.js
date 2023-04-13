@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 export default function Header() {
     const navigate = useNavigate();
-    const [color, setColor] = useState("");
+    const [color, setColor] = useState("#20B2AA");
     const [color1, setColor1] = useState("");
     const [color2, setColor2] = useState("");
 

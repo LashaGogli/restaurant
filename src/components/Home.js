@@ -91,8 +91,7 @@ export default function Home() {
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={data[1].image} style={{ height: "200px" }} />
                 <Card.Body>
-                    <Card.Title>{data[1].name}</Card.Title>
-
+                    <Card.Title style={{height:"60px"}}>{data[1].name}</Card.Title>
                     <Button variant="primary">Details</Button>
                     <span className='priceSpan'>{data[1].price}$</span>
 
@@ -101,31 +100,25 @@ export default function Home() {
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={data[14].image} style={{ height: "200px" }} />
                 <Card.Body>
-                    <Card.Title>{data[14].name}</Card.Title>
-
+                    <Card.Title style={{height:"60px"}}>{data[14].name}</Card.Title>
                     <Button variant="primary">Details</Button>
+                    <span className='priceSpan'>{data[14].price}$</span>
                 </Card.Body>
             </Card>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src={data[15].image} style={{ height: "200px" }} />
                 <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
+                    <Card.Title style={{height:"60px"}}>{data[15].name}</Card.Title>
                     <Button variant="primary">Details</Button>
+                    <span className='priceSpan'>{data[15].price}$</span>
                 </Card.Body>
             </Card>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src={data[16].image} style={{ height: "200px" }} />
                 <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
+                    <Card.Title style={{height:"60px"}}>{data[16].name}</Card.Title>
                     <Button variant="primary">Details</Button>
+                    <span className='priceSpan'>{data[16].price}$</span>
                 </Card.Body>
             </Card>
         </div>
