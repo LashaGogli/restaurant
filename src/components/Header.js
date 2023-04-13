@@ -25,6 +25,11 @@ export default function Header() {
         setColor1("black");
         setColor("black");
     }
+    function changeColor3() {
+        setColor("black");
+        setColor1("black");
+        setColor2("black");
+    }
 
     return (
         <header>
@@ -38,7 +43,7 @@ export default function Header() {
                 </nav>
             </div>
             <div className="cartDiv">
-                <img className="cart" src={cart} alt="cart"></img>
+                <img onClick={() => { navigate('/cart'); changeColor3();}} className="cart" src={cart} alt="cart"></img>
                 <span>0</span>
             </div>
         </header>

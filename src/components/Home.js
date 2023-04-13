@@ -85,11 +85,12 @@ export default function Home() {
             </Carousel.Item>
 
         </Carousel>
-        <h1>THE MOST POPULAR DISHES</h1>
+        <h1></h1>
 
         <div className='popularDiv'>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={data[1].image} style={{ height: "200px" }} />
+                <Card.Img variant="top" src={data[1].image} style={{ height: "200px", position:"relative" }} />
+                <span className='addTocart'>add to cart</span>
                 <Card.Body>
                     <Card.Title style={{height:"60px"}}>{data[1].name}</Card.Title>
                     <Button variant="primary">Details</Button>
@@ -98,7 +99,8 @@ export default function Home() {
                 </Card.Body>
             </Card>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={data[14].image} style={{ height: "200px" }} />
+                <Card.Img variant="top" src={data[14].image} style={{ height: "200px", position:"relative" }} />
+                <span className='addTocart'>add to cart</span>
                 <Card.Body>
                     <Card.Title style={{height:"60px"}}>{data[14].name}</Card.Title>
                     <Button variant="primary">Details</Button>
@@ -106,7 +108,8 @@ export default function Home() {
                 </Card.Body>
             </Card>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={data[15].image} style={{ height: "200px" }} />
+                <Card.Img variant="top" src={data[15].image} style={{ height: "200px", position:"relative" }} />
+                <span className='addTocart'>add to cart</span>
                 <Card.Body>
                     <Card.Title style={{height:"60px"}}>{data[15].name}</Card.Title>
                     <Button variant="primary">Details</Button>
@@ -114,7 +117,8 @@ export default function Home() {
                 </Card.Body>
             </Card>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={data[16].image} style={{ height: "200px" }} />
+                <Card.Img variant="top" src={data[16].image} style={{ height: "200px", position:"relative" }} />
+                <span className='addTocart'>add to cart</span>
                 <Card.Body>
                     <Card.Title style={{height:"60px"}}>{data[16].name}</Card.Title>
                     <Button variant="primary">Details</Button>

@@ -4,6 +4,7 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 import Menu from './components/Menu';
 import Contact from './components/Contact';
 import Home from './components/Home';
+import Cart from './components/Cart';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/contactus" element={<Contact />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </HashRouter>
     </>
