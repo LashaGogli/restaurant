@@ -5,6 +5,7 @@ import Menu from './components/Menu';
 import Contact from './components/Contact';
 import Home from './components/Home';
 import Cart from './components/Cart';
+import Footer from './components/Footer'
 
 
 function App() {
@@ -21,7 +22,9 @@ function App() {
           <Route path="/contactus" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
+        
       </HashRouter>
+      <Footer/>
     </>
   )
 }

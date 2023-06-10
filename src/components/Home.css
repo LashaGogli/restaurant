@@ -25,12 +25,13 @@
     background-color: white;
     text-align: center;
     line-height: 27px;
-    border-radius: 10px;
+    border-radius: 5px;
     padding-left: 5px;
     padding-right: 5px;
     font-family: "Chivo Mono";
     font-weight: 400;
     cursor: pointer;
+    border: solid 1px black;
 
 }
 
