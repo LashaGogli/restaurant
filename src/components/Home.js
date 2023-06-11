@@ -91,7 +91,7 @@ export default function Home() {
                 <Card.Img variant="top" src={data[1].image} style={{ height: "200px", position:"relative" }} />
                 <span className='addTocart'>add to cart</span>
                 <Card.Body>
-                    <Card.Title style={{height:"60px"}}>{data[1].name}</Card.Title>
+                    <Card.Title style={{height:"60px" , fontSize: "18px" }}>{data[1].name}</Card.Title>
                     <Button variant="primary">Details</Button>
                     <span className='priceSpan'>{data[1].price}$</span>
 
@@ -101,7 +101,7 @@ export default function Home() {
                 <Card.Img variant="top" src={data[14].image} style={{ height: "200px", position:"relative" }} />
                 <span className='addTocart'>add to cart</span>
                 <Card.Body>
-                    <Card.Title style={{height:"60px"}}>{data[14].name}</Card.Title>
+                    <Card.Title style={{height:"60px" , fontSize: "18px" }}>{data[14].name}</Card.Title>
                     <Button variant="primary">Details</Button>
                     <span className='priceSpan'>{data[14].price}$</span>
                 </Card.Body>
@@ -110,7 +110,7 @@ export default function Home() {
                 <Card.Img variant="top" src={data[15].image} style={{ height: "200px", position:"relative" }} />
                 <span className='addTocart'>add to cart</span>
                 <Card.Body>
-                    <Card.Title style={{height:"60px"}}>{data[15].name}</Card.Title>
+                    <Card.Title style={{height:"60px" , fontSize: "18px" }}>{data[15].name}</Card.Title>
                     <Button variant="primary">Details</Button>
                     <span className='priceSpan'>{data[15].price}$</span>
                 </Card.Body>
@@ -119,7 +119,7 @@ export default function Home() {
                 <Card.Img variant="top" src={data[16].image} style={{ height: "200px", position:"relative" }} />
                 <span className='addTocart'>add to cart</span>
                 <Card.Body>
-                    <Card.Title style={{height:"60px"}}>{data[16].name}</Card.Title>
+                    <Card.Title style={{height:"60px" , fontSize: "18px" }}>{data[16].name}</Card.Title>
                     <Button variant="primary">Details</Button>
                     <span className='priceSpan'>{data[16].price}$</span>
                 </Card.Body>

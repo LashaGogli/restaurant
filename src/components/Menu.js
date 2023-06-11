@@ -1,6 +1,7 @@
 import data from "../data.json"
 import '../components/Menu.css'
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 export default function Menu() {
 
@@ -20,7 +21,8 @@ export default function Menu() {
                             <Card.Img variant="top" src={item.image} style={{ height: "200px", position: "relative" }} />
                             <span className='addTocart'>add to cart</span>
                             <Card.Body>
-                                <Card.Title style={{ height: "60px" }}>{item.name}</Card.Title>
+                                <Card.Title style={{ height: "60px", fontSize: "18px" }}>{item.name}</Card.Title>
+                                <Button variant="primary">Details</Button>
                                 <span className='priceSpan'>{item.price}$</span>
 
                             </Card.Body>
@@ -42,7 +44,8 @@ export default function Menu() {
                             <Card.Img variant="top" src={item.image} style={{ height: "200px", position: "relative" }} />
                             <span className='addTocart'>add to cart</span>
                             <Card.Body>
-                                <Card.Title style={{ height: "60px" }}>{item.name}</Card.Title>
+                                <Card.Title style={{ height: "60px", fontSize: "18px" }}>{item.name}</Card.Title>
+                                <Button variant="primary">Details</Button>
                                 <span className='priceSpan'>{item.price}$</span>
 
                             </Card.Body>
@@ -65,7 +68,8 @@ export default function Menu() {
                             <Card.Img variant="top" src={item.image} style={{ height: "200px", position: "relative" }} />
                             <span className='addTocart'>add to cart</span>
                             <Card.Body>
-                                <Card.Title style={{ height: "60px" }}>{item.name}</Card.Title>
+                                <Card.Title style={{ height: "60px", fontSize: "18px" }}>{item.name}</Card.Title>
+                                <Button variant="primary">Details</Button>
                                 <span className='priceSpan'>{item.price}$</span>
 
                             </Card.Body>
@@ -87,7 +91,8 @@ export default function Menu() {
                             <Card.Img variant="top" src={item.image} style={{ height: "200px", position: "relative" }} />
                             <span className='addTocart'>add to cart</span>
                             <Card.Body>
-                                <Card.Title style={{ height: "60px" }}>{item.name}</Card.Title>
+                                <Card.Title style={{ height: "60px", fontSize: "18px" }}>{item.name}</Card.Title>
+                                <Button variant="primary">Details</Button>
                                 <span className='priceSpan'>{item.price}$</span>
 
                             </Card.Body>

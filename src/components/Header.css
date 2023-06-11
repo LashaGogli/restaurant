@@ -29,6 +29,13 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+
+#menu-dropdown {
+    font-size: 40px;
+    font-family: "Chivo Mono";
+    font-weight: 800;
 }
 
 nav {
@@ -39,21 +46,25 @@ nav ul li:first-child:hover {
     color: #20B2AA !important;
     cursor: pointer;
 }
+
 nav ul li:nth-child(2):hover {
     color: #20B2AA !important;
     cursor: pointer;
 }
+
 nav ul li:nth-child(3):hover {
     color: #20B2AA !important;
     cursor: pointer;
 }
-.cart:hover{
+
+.cart:hover {
     width: 55px;
     height: 55px;
     color: blue;
     cursor: pointer;
 }
-.cartDiv{
+
+.cartDiv {
     width: 7%;
     height: 100%;
     display: flex;
