@@ -27,15 +27,6 @@
         "image": "https://www.carolinescooking.com/wp-content/uploads/2018/12/baked-coconut-shrimp-mango-sauce-photo.jpg"
     },
     {
-        "id": 4,
-        "category": "Main Dish",
-        "name": "Crab Cakes with Remoulade Sauce",
-        "price": 27.00,
-        "status": "Add to cart",
-        "description": "These Maryland Crab Cakes are served with a homemade tartar sauce. Try this delicious crab cake recipe and serve either as an appetizer or a light dinner!",
-        "image": "https://assets.myfoodandfamily.com/adaptivemedia/rendition/506608_1500x1000.tif?id=e40aeab8882ec955fbf1978bf3f584a218ebf643&ht=650&wd=1004"
-    },
-    {
         "id": 5,
         "category": "Main Dish",
         "name": "Favorite Meatloaf",
@@ -178,15 +169,6 @@
         "status": "Add to cart",
         "description": "Since a lot of delicious onions are grown in our state, they are always part of my menu. This tangy side dish is good with pork and beef. The inspiration for this unusual combination was a prolific apple tree!",
         "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Fried-Onions-and-Apples_EXPS_CIWMZ19_6457_B09_10_2b-2.jpg?fit=700,1024"
-    },
-    {
-        "id": 21,
-        "category": "Drinks",
-        "name": "Water",
-        "price": 2.00,
-        "status": "Add to cart",
-        "description": "Water is the main ingredient in most of the beverages that are consumed around the world",
-        "image": "https://177d01fbswx3jjl1t20gdr8j-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/July-Well-Fed-1-AdobeStock_114696818.jpg"
     },
     {
         "id": 22,
