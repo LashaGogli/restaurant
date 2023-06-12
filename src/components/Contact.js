@@ -5,7 +5,6 @@ import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
 const containerStyle = {
     width: '700px',
     height: '500px',
-    // margin: "30px"
 };
 
 const center = {

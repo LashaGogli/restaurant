@@ -4,7 +4,11 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import data from "../data.json"
 import "../components/Home.css"
+import { useNavigate } from "react-router-dom";
+
 export default function Home() {
+
+    const navigate = useNavigate();
 
     return (<>
         <Carousel>
@@ -88,44 +92,53 @@ export default function Home() {
 
         <div className='popularDiv'>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={data[1].image} style={{ height: "200px", position:"relative" }} />
+                <Card.Img variant="top" src={data[1].image} style={{ height: "200px", position: "relative" }} />
                 <span className='addTocart'>add to cart</span>
                 <Card.Body>
-                    <Card.Title style={{height:"60px" , fontSize: "18px" }}>{data[1].name}</Card.Title>
-                    <Button variant="primary">Details</Button>
-                    <span className='priceSpan'>{data[1].price}$</span>
+                    <Card.Title style={{ height: "60px", fontSize: "18px" }}>{data[1].name}</Card.Title>
+                    <Button
+                        onClick={() => {
+                            navigate(`/details/${data[1].name}`);
+                        }}
+                        variant="primary"
+                    >
+                        Details
+                    </Button>                      <span className='priceSpan'>{data[1].price}$</span>
 
                 </Card.Body>
             </Card>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={data[14].image} style={{ height: "200px", position:"relative" }} />
+                <Card.Img variant="top" src={data[14].image} style={{ height: "200px", position: "relative" }} />
                 <span className='addTocart'>add to cart</span>
                 <Card.Body>
-                    <Card.Title style={{height:"60px" , fontSize: "18px" }}>{data[14].name}</Card.Title>
-                    <Button variant="primary">Details</Button>
-                    <span className='priceSpan'>{data[14].price}$</span>
+                    <Card.Title style={{ height: "60px", fontSize: "18px" }}>{data[14].name}</Card.Title>
+                    <Button
+                        onClick={() => {
+                            navigate(`/details/${data[14].name}`);
+                        }}
+                        variant="primary"
+                    >
+                        Details
+                    </Button>                      <span className='priceSpan'>{data[14].price}$</span>
                 </Card.Body>
             </Card>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={data[15].image} style={{ height: "200px", position:"relative" }} />
+                <Card.Img variant="top" src={data[15].image} style={{ height: "200px", position: "relative" }} />
                 <span className='addTocart'>add to cart</span>
                 <Card.Body>
-                    <Card.Title style={{height:"60px" , fontSize: "18px" }}>{data[15].name}</Card.Title>
-                    <Button variant="primary">Details</Button>
-                    <span className='priceSpan'>{data[15].price}$</span>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={data[16].image} style={{ height: "200px", position:"relative" }} />
-                <span className='addTocart'>add to cart</span>
-                <Card.Body>
-                    <Card.Title style={{height:"60px" , fontSize: "18px" }}>{data[16].name}</Card.Title>
-                    <Button variant="primary">Details</Button>
-                    <span className='priceSpan'>{data[16].price}$</span>
+                    <Card.Title style={{ height: "60px", fontSize: "18px" }}>{data[15].name}</Card.Title>
+                    <Button
+                        onClick={() => {
+                            navigate(`/details/${data[15].name}`);
+                        }}
+                        variant="primary"
+                    >
+                        Details
+                    </Button>                      <span className='priceSpan'>{data[15].price}$</span>
                 </Card.Body>
             </Card>
         </div>
-       
+
 
     </>
 

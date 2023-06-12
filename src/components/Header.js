@@ -7,11 +7,8 @@ import Dropdown from "react-bootstrap/Dropdown";
 
 export default function Header({ scrollTosection, scrollTosection1, scrollTosection2, scrollTosection3 }) {
 
-
-
-
-
   const navigate = useNavigate();
+
   return (
     <header>
       <div className="headerDiv">

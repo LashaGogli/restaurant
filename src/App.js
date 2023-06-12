@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Cart from './components/Cart';
 import Footer from './components/Footer';
 import { useRef } from 'react';
-// import { useState } from 'react';
+import Details from './components/Details';
 
 function App() {
   const mainDish = useRef(null);
@@ -61,6 +61,7 @@ function App() {
           <Route path="/menu" element={<Menu sideDish={sideDish} mainDish={mainDish} dessert={dessert} drink={drink} />} />
           <Route path="/contactus" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/details/:name" element={<Details />} />
         </Routes>
       </HashRouter>
       <Footer />

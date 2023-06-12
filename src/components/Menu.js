@@ -3,16 +3,17 @@ import data from "../data.json";
 import '../components/Menu.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import { useNavigate } from "react-router-dom";
 
 export default function Menu({ mainDish, sideDish, dessert, drink }) {
     const mainDishes = data.filter((item) => item.category === "Main Dish");
     const sideDishes = data.filter((item) => item.category === "Side Dish");
     const desserts = data.filter((item) => item.category === "Dessert");
     const drinks = data.filter((item) => item.category === "Drinks");
-  
-    
 
-    
+    const navigate = useNavigate();
+
+
 
     return (
         <>
@@ -26,7 +27,14 @@ export default function Menu({ mainDish, sideDish, dessert, drink }) {
                                 <span className='addTocart'>add to cart</span>
                                 <Card.Body>
                                     <Card.Title style={{ height: "60px", fontSize: "18px" }}>{item.name}</Card.Title>
-                                    <Button variant="primary">Details</Button>
+                                    <Button
+                                        onClick={() => {
+                                            navigate(`/details/${item.name}`);
+                                        }}
+                                        variant="primary"
+                                    >
+                                        Details
+                                    </Button>
                                     <span className='priceSpan'>{item.price}$</span>
                                 </Card.Body>
                             </Card>
@@ -45,8 +53,14 @@ export default function Menu({ mainDish, sideDish, dessert, drink }) {
                                 <span className='addTocart'>add to cart</span>
                                 <Card.Body>
                                     <Card.Title style={{ height: "60px", fontSize: "18px" }}>{item.name}</Card.Title>
-                                    <Button variant="primary">Details</Button>
-                                    <span className='priceSpan'>{item.price}$</span>
+                                    <Button
+                                        onClick={() => {
+                                            navigate(`/details/${item.name}`);
+                                        }}
+                                        variant="primary"
+                                    >
+                                        Details
+                                    </Button>                                    <span className='priceSpan'>{item.price}$</span>
                                 </Card.Body>
                             </Card>
                         </div>
@@ -64,8 +78,14 @@ export default function Menu({ mainDish, sideDish, dessert, drink }) {
                                 <span className='addTocart'>add to cart</span>
                                 <Card.Body>
                                     <Card.Title style={{ height: "60px", fontSize: "18px" }}>{item.name}</Card.Title>
-                                    <Button variant="primary">Details</Button>
-                                    <span className='priceSpan'>{item.price}$</span>
+                                    <Button
+                                        onClick={() => {
+                                            navigate(`/details/${item.name}`);
+                                        }}
+                                        variant="primary"
+                                    >
+                                        Details
+                                    </Button>                                    <span className='priceSpan'>{item.price}$</span>
                                 </Card.Body>
                             </Card>
                         </div>
@@ -83,8 +103,14 @@ export default function Menu({ mainDish, sideDish, dessert, drink }) {
                                 <span className='addTocart'>add to cart</span>
                                 <Card.Body>
                                     <Card.Title style={{ height: "60px", fontSize: "18px" }}>{item.name}</Card.Title>
-                                    <Button variant="primary">Details</Button>
-                                    <span className='priceSpan'>{item.price}$</span>
+                                    <Button
+                                        onClick={() => {
+                                            navigate(`/details/${item.name}`);
+                                        }}
+                                        variant="primary"
+                                    >
+                                        Details
+                                    </Button>                                    <span className='priceSpan'>{item.price}$</span>
                                 </Card.Body>
                             </Card>
                         </div>
