@@ -5,13 +5,16 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from "react-router-dom";
 
-export default function Menu({ mainDish, sideDish, dessert, drink }) {
+
+export default function Menu({ onAdd, mainDish, sideDish, dessert, drink }) {
     const mainDishes = data.filter((item) => item.category === "Main Dish");
     const sideDishes = data.filter((item) => item.category === "Side Dish");
     const desserts = data.filter((item) => item.category === "Dessert");
     const drinks = data.filter((item) => item.category === "Drinks");
 
     const navigate = useNavigate();
+
+    
 
 
 
@@ -24,7 +27,7 @@ export default function Menu({ mainDish, sideDish, dessert, drink }) {
                         <div className="cards" key={item.id}>
                             <Card style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src={item.image} style={{ height: "200px", position: "relative" }} />
-                                <span className='addTocart'>add to cart</span>
+                                <span className='addTocart' onClick={() => onAdd(item)}>Add to Cart</span>
                                 <Card.Body>
                                     <Card.Title style={{ height: "60px", fontSize: "18px" }}>{item.name}</Card.Title>
                                     <Button
@@ -34,8 +37,7 @@ export default function Menu({ mainDish, sideDish, dessert, drink }) {
                                         variant="primary"
                                     >
                                         Details
-                                    </Button>
-                                    <span className='priceSpan'>{item.price}$</span>
+                                    </Button><span className='priceSpan'>{item.price}$</span>
                                 </Card.Body>
                             </Card>
                         </div>
@@ -50,7 +52,7 @@ export default function Menu({ mainDish, sideDish, dessert, drink }) {
                         <div className="cards" key={item.id}>
                             <Card style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src={item.image} style={{ height: "200px", position: "relative" }} />
-                                <span className='addTocart'>add to cart</span>
+                                <span className='addTocart' onClick={() => onAdd(item)}>Add to Cart</span>
                                 <Card.Body>
                                     <Card.Title style={{ height: "60px", fontSize: "18px" }}>{item.name}</Card.Title>
                                     <Button
@@ -60,7 +62,7 @@ export default function Menu({ mainDish, sideDish, dessert, drink }) {
                                         variant="primary"
                                     >
                                         Details
-                                    </Button>                                    <span className='priceSpan'>{item.price}$</span>
+                                    </Button><span className='priceSpan'>{item.price}$</span>
                                 </Card.Body>
                             </Card>
                         </div>
@@ -75,7 +77,7 @@ export default function Menu({ mainDish, sideDish, dessert, drink }) {
                         <div className="cards" key={item.id}>
                             <Card style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src={item.image} style={{ height: "200px", position: "relative" }} />
-                                <span className='addTocart'>add to cart</span>
+                                <span className='addTocart' onClick={() => onAdd(item)}>Add to Cart</span>
                                 <Card.Body>
                                     <Card.Title style={{ height: "60px", fontSize: "18px" }}>{item.name}</Card.Title>
                                     <Button
@@ -85,7 +87,7 @@ export default function Menu({ mainDish, sideDish, dessert, drink }) {
                                         variant="primary"
                                     >
                                         Details
-                                    </Button>                                    <span className='priceSpan'>{item.price}$</span>
+                                    </Button><span className='priceSpan'>{item.price}$</span>
                                 </Card.Body>
                             </Card>
                         </div>
@@ -100,7 +102,7 @@ export default function Menu({ mainDish, sideDish, dessert, drink }) {
                         <div className="cards" key={item.id}>
                             <Card style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src={item.image} style={{ height: "200px", position: "relative" }} />
-                                <span className='addTocart'>add to cart</span>
+                                <span className='addTocart' onClick={() => onAdd(item)}>Add to Cart</span>
                                 <Card.Body>
                                     <Card.Title style={{ height: "60px", fontSize: "18px" }}>{item.name}</Card.Title>
                                     <Button
@@ -110,7 +112,7 @@ export default function Menu({ mainDish, sideDish, dessert, drink }) {
                                         variant="primary"
                                     >
                                         Details
-                                    </Button>                                    <span className='priceSpan'>{item.price}$</span>
+                                    </Button><span className='priceSpan'>{item.price}$</span>
                                 </Card.Body>
                             </Card>
                         </div>

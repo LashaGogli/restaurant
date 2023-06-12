@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@800&family=Space+Mono:wght@700&display=swap');
+
+.cartDivv {
+    width: 90vw;
+    height: 80vh;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: lightblue;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.insideDiv {
+    width: 100%;
+    height: 90%;
+}
+
+.checkout {
+    background-color: orange;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+
+}
+
+.emptySpan {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Chivo Mono";
+    font-size: 30px;
+}
+
+.shidaDiv {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    align-items: center;
+
+}
+
+h3 {
+    font-family: "Chivo Mono";
+    font-size: 20px;
+    width: 60%;
+}
+
+.sumSpan {
+    font-family: "Chivo Mono";
+    font-size: 20px;
+    width: 20%;
+}
+.angarishiDiv{
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.pliusi{
+    background-color: green;
+    font-family: "Chivo Mono";
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+.minusi{
+    background-color: red;
+    font-family: "Chivo Mono";
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}

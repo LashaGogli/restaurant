@@ -6,8 +6,8 @@ import data from "../data.json"
 import "../components/Home.css"
 import { useNavigate } from "react-router-dom";
 
-export default function Home() {
-
+export default function Home(props) {
+    const { onAdd } = props;
     const navigate = useNavigate();
 
     return (<>
@@ -93,7 +93,7 @@ export default function Home() {
         <div className='popularDiv'>
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={data[1].image} style={{ height: "200px", position: "relative" }} />
-                <span className='addTocart'>add to cart</span>
+                <span className='addTocart' onClick={() => onAdd(data[1])}>Add to Cart</span>
                 <Card.Body>
                     <Card.Title style={{ height: "60px", fontSize: "18px" }}>{data[1].name}</Card.Title>
                     <Button
@@ -103,13 +103,13 @@ export default function Home() {
                         variant="primary"
                     >
                         Details
-                    </Button>                      <span className='priceSpan'>{data[1].price}$</span>
+                    </Button><span className='priceSpan'>{data[1].price}$</span>
 
                 </Card.Body>
             </Card>
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={data[14].image} style={{ height: "200px", position: "relative" }} />
-                <span className='addTocart'>add to cart</span>
+                <span className='addTocart' onClick={() => onAdd(data[14])}>Add to Cart</span>
                 <Card.Body>
                     <Card.Title style={{ height: "60px", fontSize: "18px" }}>{data[14].name}</Card.Title>
                     <Button
@@ -119,12 +119,12 @@ export default function Home() {
                         variant="primary"
                     >
                         Details
-                    </Button>                      <span className='priceSpan'>{data[14].price}$</span>
+                    </Button><span className='priceSpan'>{data[14].price}$</span>
                 </Card.Body>
             </Card>
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={data[15].image} style={{ height: "200px", position: "relative" }} />
-                <span className='addTocart'>add to cart</span>
+                <span className='addTocart' onClick={() => onAdd(data[15])}>Add to Cart</span>
                 <Card.Body>
                     <Card.Title style={{ height: "60px", fontSize: "18px" }}>{data[15].name}</Card.Title>
                     <Button
@@ -134,7 +134,7 @@ export default function Home() {
                         variant="primary"
                     >
                         Details
-                    </Button>                      <span className='priceSpan'>{data[15].price}$</span>
+                    </Button><span className='priceSpan'>{data[15].price}$</span>
                 </Card.Body>
             </Card>
         </div>

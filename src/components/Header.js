@@ -5,9 +5,11 @@ import Dropdown from "react-bootstrap/Dropdown";
 
 
 
-export default function Header({ scrollTosection, scrollTosection1, scrollTosection2, scrollTosection3 }) {
+export default function Header({ countCartItems, scrollTosection, scrollTosection1, scrollTosection2, scrollTosection3 }) {
 
   const navigate = useNavigate();
+
+ 
 
   return (
     <header>
@@ -48,7 +50,7 @@ export default function Header({ scrollTosection, scrollTosection1, scrollTosect
       </div>
       <div className="cartDiv">
         <img onClick={() => { navigate("/cart"); }} className="cart" src={cart} alt="cart" />
-        <span>0</span>
+        <span>{countCartItems}</span>
       </div>
     </header>
   );
