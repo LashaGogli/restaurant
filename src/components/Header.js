@@ -1,10 +1,16 @@
 import "../components/Header.css";
 import cart from "../photos/cart.png";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 
-export default function Header() {
+
+
+export default function Header({ scrollTosection, scrollTosection1, scrollTosection2, scrollTosection3 }) {
+
+
+
+
+
   const navigate = useNavigate();
   return (
     <header>
@@ -14,21 +20,30 @@ export default function Header() {
             <li onClick={() => { navigate("/"); }}>
               HOME
             </li>
-            <li onClick={() => { navigate("menu");  }} >
+            <li onClick={() => { navigate("/menu"); }} >
               <Dropdown>
                 <Dropdown.Toggle variant="default" id="menu-dropdown">
                   MENU
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item onClick={() => { navigate("/menu/option1"); }}>Main Dishes</Dropdown.Item>
-                  <Dropdown.Item onClick={() => { navigate("/menu/option2"); }}>Side Dishes</Dropdown.Item>
-                  <Dropdown.Item onClick={() => { navigate("/menu/option3"); }}>Desserts</Dropdown.Item>
-                  <Dropdown.Item onClick={() => { navigate("/menu/option4"); }}>Drinks</Dropdown.Item>
+                  <Dropdown.Item onClick={() => scrollTosection()}>
+                    Main Dishes
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => scrollTosection1()}>
+                    Side Dishes
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => scrollTosection2()}>
+                    Desserts
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => scrollTosection3()}>
+                    Drinks
+                  </Dropdown.Item>
+
                 </Dropdown.Menu>
               </Dropdown>
             </li>
-            <li onClick={() => { navigate("/contactus");  }}>
+            <li onClick={() => { navigate("/contactus"); }}>
               CONTACT US
             </li>
           </ul>
